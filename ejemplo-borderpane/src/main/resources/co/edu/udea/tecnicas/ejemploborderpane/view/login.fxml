@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<VBox alignment="CENTER" prefHeight="334.0" prefWidth="470.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.udea.tecnicas.ejemploborderpane.controller.LoginController">
+
+    <Label text="Bienvenido"/>
+    <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+        <children>
+            <Label text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <graphic>
+                    <FontIcon iconLiteral="fas-user-tie"/>
+                </graphic>
+            </Label>
+            <TextField fx:id="txtUsuario" promptText="Usuario" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <graphic>
+                    <FontIcon iconLiteral="fas-lock"/>
+                </graphic>
+            </Label>
+            <PasswordField fx:id="txtContrasena" promptText="Contraseña" GridPane.columnIndex="1"
+                           GridPane.rowIndex="1"/>
+        </children>
+        <columnConstraints>
+            <ColumnConstraints/>
+            <ColumnConstraints/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints/>
+            <RowConstraints/>
+        </rowConstraints>
+    </GridPane>
+
+
+    <Button onAction="#btnIngresar_action" text="Ingresar"/>
+    <Label fx:id="lblErrores" textAlignment="CENTER" textFill="#fc0909"/>
+
+</VBox>
