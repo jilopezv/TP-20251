@@ -20,6 +20,7 @@ public class EstudianteService {
     }
 
     public List<Estudiante> obtenerEstudiantes() {
+
         return estudianteDAO.obtenerEstudiantes();
     }
 

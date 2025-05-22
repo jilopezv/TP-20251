@@ -38,4 +38,8 @@ public class Estudiante {
     public void setPrograma(String programa) {
         this.programa = programa;
     }
+
+    public String toString() {
+        return this.id + " - " + this.nombres;
+    }
 }

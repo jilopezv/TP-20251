@@ -37,7 +37,7 @@ public class LoginController {
             lblErrores.setText("");
             // Aquí puedes agregar la lógica para verificar el usuario y la contraseña
             System.out.println("Ingreso exitoso");
-            FXMLLoader fxmlLoader = new FXMLLoader(BorderPaneApp.class.getResource("view/estudiantes.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(BorderPaneApp.class.getResource("view/notasEstudiantes.fxml"));
             Parent estudiantesView = fxmlLoader.load();
             this.contenedorPrincipal.setCenter(estudiantesView);
         }

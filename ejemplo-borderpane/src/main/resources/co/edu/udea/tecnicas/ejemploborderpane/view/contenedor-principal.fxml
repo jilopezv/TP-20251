@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 
 <BorderPane fx:id="contenedorPrincipal" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="co.edu.udea.tecnicas.ejemploborderpane.controller.ContenedorPrincipalController">
-
-
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Archivo">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Salir" onAction="#mnuCerrar_action"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Notas">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registrar" onAction="#mnuRegistrarNotas_action"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Estudiantes">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registrar" onAction="#mnuRegistrarEstudiantes_action"/>
+                        <MenuItem mnemonicParsing="false" text="Asignar nota" onAction="#mnu_AsignarNotasEstudiantes_action"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
 </BorderPane>
-
