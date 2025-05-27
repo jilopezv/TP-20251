@@ -1,12 +1,14 @@
 package co.edu.udea.tecnicas.ejemploborderpane.service;
 
 import co.edu.udea.tecnicas.ejemploborderpane.dao.NotaDAO;
+import co.edu.udea.tecnicas.ejemploborderpane.dao.impl.NotaDAOIO;
+import co.edu.udea.tecnicas.ejemploborderpane.dao.impl.NotaDAOList;
 import co.edu.udea.tecnicas.ejemploborderpane.model.Nota;
 
 import java.util.List;
 
 public class NotaService {
-    private NotaDAO notaDAO = new NotaDAO();
+    private NotaDAO notaDAO = new NotaDAOIO();
 
     public void guardarNota(Nota nota) throws IllegalArgumentException {
         // Validar la nota antes de guardarla (reglas de negocio)
