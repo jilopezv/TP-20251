@@ -11,6 +11,10 @@ public class Nota {
         this.porcentaje = porcentaje;
     }
 
+    public Nota() {
+
+    }
+
     public String getNombre() {
         return nombre;
     }
